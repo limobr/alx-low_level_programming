@@ -1,8 +1,5 @@
 #include "main.h"
 
-/**Author : Limo Brian
- */
-
 /**
  * clear_bit - sets the value of a bit to 0 at a given index
  * @n: a pointer to the number to modify

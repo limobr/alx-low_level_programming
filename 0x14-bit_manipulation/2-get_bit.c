@@ -1,8 +1,5 @@
 #include "main.h"
 
-/**Author : Limo Brian
- */
-
 /**
  * get_bit - returns the value of a bit at a given index
  * @n: integer
