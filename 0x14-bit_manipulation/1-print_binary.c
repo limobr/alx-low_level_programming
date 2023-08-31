@@ -1,26 +1,16 @@
 #include "main.h"
-
 /**
- * print_binary - prints the binary representation of an unsigned long int
- * @n: the number to be printed in binary form
+ * print_binary - print binary representation on a number
+ * @v: integer
  *
- * Return: void
+ * Return: nothing
  */
-void print_binary(unsigned long int n)
+void print_binary(unsigned long int v)
 {
-	int i, j;
-	unsigned long int mask;
+	unsigned long int bn;
 
-	i = 0;
-	for (j = 63; j >= 0; j--)
-	{
-		mask = (n >> 1) & 1; /* shift mask right by 1 bit */
-		if (mask == 1)
-			i = 1;
-		if (i == 1)
-			_putchar(((n >> i) & 1) + '0');
-	}
-	if (n == 0)
-		_putchar('0');
-
+	if (v > 1)
+	print_binary(v >> 1);
+	bn = v & 1;
+	_putchar(bn + '0');
 }
