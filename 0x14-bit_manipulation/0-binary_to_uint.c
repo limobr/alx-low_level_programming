@@ -1,8 +1,5 @@
 #include "main.h"
 
-/**Author : Limo Brian
- */
-
 /**
  * _strlen - returns length of string (modified)
  * @s: string to be determined
